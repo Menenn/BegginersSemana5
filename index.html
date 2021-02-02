@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="shortcut icon" href="https://freeiconshop.com/wp-content/uploads/edd/box-outline-filled.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="consulta.html">Consulta</a>
+        <a href="">Cadastro</a>
+    </header>
+    <div id="div01">
+        <div>
+        <p>Cadastro de Produtos</p>
+    <select name="select" id="tipoprod">
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="Notebooks">Notebooks</option>
+        <option value="Monitores">Monitores</option>
+        <option value="Acessórios">Acessórios</option>
+      </select>
+    <input type="text" name="nomeprod" id="nomeprod" placeholder="Nome do Produto">
+    <input type="text" name="caracprod" id="caracprod" placeholder="Descrição do produto">
+    <input type="text" name="numprod" id="numprod" placeholder="Número de Série" oninput="adicionarponto()">
+        </div>
+
+        <button id="buttonenviar" onclick="setar()">Salvar</button>
+
+    </div>
+    
+</body>
+</html>
